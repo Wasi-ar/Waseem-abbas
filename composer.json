@@ -1,0 +1,11 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "repositories": {
+        "stripe-php-next": {
+            "type": "vcs",
+            "url": "https://github.com/stripe/stripe-php-next"
+        }
+    }
+}

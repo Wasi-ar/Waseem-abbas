@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 100vh;
+ 
+}
+#eyeIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.container-login {
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-login h1 {
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+  padding: 10px;
+  padding-bottom: 40px;
+  font-size: 40px;
+}
+.container-login p {
+  text-align: center;
+  color: rgb(82, 81, 81);
+  padding: auto;
+}
+.container-login .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.social-links a {
+  font-size: 30px;
+  padding: 12px;
+  background: fixed;
+  background-color: rgb(30, 103, 143);
+  color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.social_links_div {
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+}
+.container-login .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.container-login .login-form button {
+  background-color: rgb(30, 103, 143);
+  height: 50px;
+  width: 30%;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  flex-direction: row;
+}
+.container-login .login-form input {
+  background-color: aliceblue;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 35px 10px 10px; /* Added right padding to make space for the eye icon */
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.login-form i {
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  bottom: -10%;
+}
+.container-signup {
+  background-image: url("ui.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vh 100vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button-signup button {
+  background-color: white;
+  height: 50px;
+  width: 45%;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 25%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px;
+}
+.container-signup h1 {
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-weight: 700;
+}
+.container-signup p {
+  color: white;
+  text-align: center;
+  padding: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h7 {
+  overflow: hidden;
+  text-align: center;
+}
+
+h7::before,
+h7::after {
+  background-color:black;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 40%;
+}
+
+h7::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h7::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+
+@media (max-width: 1400px) {
+  .main-container {
+  width: 100%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 100vh;
+ 
+ 
+}
+}
+@media (max-width: 700px) {
+  .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column-reverse;
+ 
+}
+}
+@media (max-width: 700px) {
+  .container-signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column-reverse;
+ 
+}
+}
+@media(max-width: 700px) {
+  .container-login {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+}
+}
+@media(max-width: 900px) {
+  .container-login .login-form button {
+  background-color: rgb(30, 103, 143);
+  height: 40px;
+  width: 30%;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  flex-direction: row;
+}
+}
+@media(max-width: 700px) {
+  .container-login .login-form button {
+  background-color: rgb(30, 103, 143);
+  height: 40px;
+  width: 30%;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  flex-direction: row;
+}
+}
+@media(max-width: 370px) {
+  .container-login .login-form button {
+  background-color: rgb(30, 103, 143);
+  height: 40px;
+  width: 30%;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 500;
+  color: white;
+  flex-direction: row;
+}
+}
+@media(max-width: 420px) {
+ .container-login h1 {
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+  padding: 10px;
+  padding-bottom: 40px;
+  font-size: 25px;
+}
+}
+@media(max-width: 420px) {
+ .container-login h1 {
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+  padding: 10px;
+  padding-bottom: 40px;
+  font-size: 25px;
+}
+}
+@media (max-width:700px) {
+ .button-signup button {
+  background-color: white;
+  height: 50px;
+ text-align: center;
+  border-radius: 25px;
+  
+  cursor: pointer;
+  margin-left: 30%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px;
+}
+}
+@media (max-width:700px) {
+    .container-signup h1 {
+  display: none;
+}
+}
